@@ -1,7 +1,9 @@
 pipeline {
     agent any
 
-    // Defining tools ensures the required binaries are in the PATH
+    environment{
+        NEW_VERSION = '1.3.0'
+    }
 
     stages {
         stage('Build') {
@@ -9,6 +11,7 @@ pipeline {
                 echo 'Building..'
                 // Execute shell commands using the 'sh' step
                 // sh 'mvn clean package' 
+                echo "Building version ${NEW_VERSION}"
             }
         }
 
