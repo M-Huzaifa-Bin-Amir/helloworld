@@ -2,10 +2,6 @@ pipeline {
     agent any
 
     // Defining tools ensures the required binaries are in the PATH
-    tools {
-        // Example: maven 'mvn-3.8.1' or nodejs 'node-16'
-        // This is configured under Manage Jenkins > Global Tool Configuration
-    }
 
     stages {
         stage('Build') {
