@@ -41,3 +41,14 @@ pipeline {
         }
     }
 }
+
+post {
+    always {
+        echo 'Post Build condition running ...'
+    }
+        faliur{
+            echo'Post Build Faliur Running ...'
+        }
+    }
+
+        
