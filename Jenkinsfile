@@ -22,7 +22,7 @@ pipeline {
                 echo 'Building..'
                 echo "Building version ${env.NEW_VERSION}"
                 // Use 'mvn' for Maven commands; 'nvm' is for Node Version Manager
-                sh 'mvn install'
+                bash 'mvn install'
             }
         }
 
